@@ -1,0 +1,6 @@
+top=-1
+push(x) ->  arr[++top]=x
+pop()   ->   top--;
+top     ->   arr[top]
+size    -> top +1 
+empty   -> top==  -1 
