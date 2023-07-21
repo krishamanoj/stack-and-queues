@@ -1,0 +1,19 @@
+push(x)  -> 
+if(cnt==n) return -1;
+a[rear%n]=x;
+rear++;
+cnt++;
+
+pop()
+if(cnt==0) return -1;
+a[front%n]=-1;
+front ++;
+cnt--;
+
+top()
+if(cnt==0) return-1 
+else a[front %n]
+
+display all elements 
+for(i=front;i<rear-1;i++)
+print(a[front %n])
