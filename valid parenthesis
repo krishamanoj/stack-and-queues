@@ -1,0 +1,16 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        #using stack
+        stack=[]
+        hashmap={")":"(","}":"{","]":"["}
+        for i in s:
+            if i in hashmap:
+                #closing bracket and present at the top of the stack then pop 
+                if stack and stack[-1]==hashmap[i]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(i)
+        return True if not stack else False  
+        #if they are same they are popped out so stack will remain empty      
