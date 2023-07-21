@@ -1,0 +1,42 @@
+1.using 2 queues 
+push(x)  ->
+q2.push(x)
+while(!q1.empty())
+{
+q2.push(q1.pfront());
+q1.pop()
+}
+swap(q1,q2)
+}
+
+pop(x)
+q1.pop()
+
+top()
+q1.front()
+
+2.using single queue
+     int n = q.size();
+        q.push(x);
+//do n-1 times 
+        for (int i = 0; i < n; i++) {
+            q.push(q.front());
+            q.pop();
+        }
+    }
+    
+    int pop() {
+        int x = q.front();
+        q.pop();
+        return x;
+    }
+    
+    int top() {
+        return q.front();
+    }
+    
+    bool empty() {
+        return q.empty();
+    }
+
+
